@@ -41,7 +41,7 @@ int main(int argc, char ** argv)
 	if (ret)
 		goto Close;
 
-	wu_clear(fd);
+	//wu_clear(fd);
 
 	wu_fd = fd;
 

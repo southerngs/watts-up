@@ -20,7 +20,7 @@ int wu_count = 0;
 int wu_debug = 0;
 char *wu_delim = ", ";
 int wu_final = 0;
-int wu_interval = 1;
+int wu_interval = 2;
 int wu_label = 0;
 int wu_newline = 0;
 int wu_suppress = 0;
@@ -320,6 +320,7 @@ static int parse_packet(struct wu_packet * p)
 
 	dbg("Parsing Packet, Raw buffer is (%d bytes) [%s]", 
 	    p->len, p->buf);
+  dbg("Parse raw buf is: '%s'", p->buf);
 
 	s = p->buf;
 
